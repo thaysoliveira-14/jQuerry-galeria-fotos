@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(31, 29, 190);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+    border-bottom: 20px solid rgb(18, 16, 126);
+}
+
+header h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521);
+}
+
+header button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+header button:hover {
+    background-color: white;
+    color: green;
+    text-shadow: none;
+}
+
+form {
+    background-color: rgba(191, 190, 192, 0.418);
+    padding: 30px;
+    margin: 0px auto;
+    text-align: center;
+    display: none;
+}
+
+input, form button {
+    padding: 8px;
+    margin-top: 15px;
+}
+
+form button {
+    font-weight: 700;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    width: 25%;
+    max-height: 280px;
+    overflow-y: hidden;
+    list-style: none;
+    position: relative;
+}
+
+ul li img {
+    width: 100%;
+}
+
+ul li a {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+ul li:hover a {
+    opacity: 1;
+}
